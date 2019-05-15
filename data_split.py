@@ -58,3 +58,7 @@ try:
     print(Strat_test_set['income_cat'])
 except:
     print("删除成功")
+
+pd.DataFrame.to_csv(Strat_train_set,'data/Strat_train_set.csv')
+pd.DataFrame.to_csv(Strat_test_set,'data/Strat_test_set.csv')
+assert os.path.exists('data/Strat_test_set.csv')
